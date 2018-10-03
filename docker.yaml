@@ -1,0 +1,14 @@
+---
+
+- name: instalando docker-ce
+  hosts: docker
+  tasks:
+   - name: fazendo download docker
+     shell: 'curl -fsSL https://get.docker.com -o get-docker.sh'
+
+   - name: instalando docker
+     shell: 'sh get-docker.sh'
+
+   - name: ola mundo
+     shell: 'echo ola mundo'
+
