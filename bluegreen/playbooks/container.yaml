@@ -1,0 +1,5 @@
+---
+- name: executando role de criacao dos container e volume
+  hosts: docker
+  roles:
+   - container 
